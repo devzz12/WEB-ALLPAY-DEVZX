@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE ALLPAY BY DEVZX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="panel">
+        <h1 class="title">PAYMENT BANG DEVZX</h1>
+        
+        <div class="payment-option selected" data-type="dana">
+            <div class="payment-icon" style="background: linear-gradient(135deg, #00AAFF, #0085FF);">
+                <i class="fab fa-google-wallet"></i>
+            </div>
+            <div class="payment-details">
+                <div class="payment-name">DANA</div>
+                <div class="payment-number">0838-7046-7137</div>
+            </div>
+            <button class="copy-btn" onclick="copyToClipboard('083870467137')">
+                <i class="fas fa-copy"></i> Copy
+            </button>
+        </div>
+        
+        
+    
+        <div class="payment-option" data-type="qris">
+            <div class="payment-icon" style="background: linear-gradient(135deg, #FF6B00, #FF9500);">
+                <i class="fas fa-qrcode"></i>
+            </div>
+            <div class="payment-details">
+                <div class="payment-name">QRIS</div>
+                <div class="payment-number">Scan QR Code below</div>
+            </div>
+            <button class="copy-btn" onclick="showQRIS()">
+                <i class="fas fa-eye"></i> Show
+            </button>
+        </div>
+        
+        <div class="qris-container" id="qrisContainer">
+            <img src="image/qris.png" alt="QRIS Code" class="qris-image">
+            <p class="text-sm text-gray-400">Scan this QR code to make payment</p>
+        </div>
+<script>
+document.write(unescape('%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22action-buttons%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22btn%20btn-primary%22%20onclick%3D%22processPayment%28%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fas%20fa-rocket%22%3E%3C%2Fi%3E%20Confirm%20Payment%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%3Cbutton%20class%3D%22btn%20btn-secondary%22%20onclick%3D%22window.open%28%27https%3A%2F%2Fwhatsapp.com%2Fchannel%2F0029VatH5BLA89MnxIpgax2C%27%2C%20%27_blank%27%29%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fab%20fa-telegram%22%3E%3C%2Fi%3E%20Join%20Channel%0A%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E'))
+</script>
+        <div class="footer">
+            <p>© 2025 bang devzx | <a href="https://wa.me/62815538792422" target="_blank">Contact Support</a></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
